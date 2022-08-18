@@ -45,3 +45,9 @@ services:
             - 6379:6379
         volumes:
             - ./redis-data:/data
+    node:
+        image: node:latest
+        container_name: node
+        restart: unless-stopped
+        ports:
+            - 4001:80

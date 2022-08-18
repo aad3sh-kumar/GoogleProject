@@ -28,7 +28,7 @@ class PostAPI extends Controller
     public function store(Request $request)
     {
         //
-        PostController::create($request);
+        return PostController::create($request);
     }
 
     /**
